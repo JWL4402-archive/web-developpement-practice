@@ -64,7 +64,7 @@
     font-size: 12px;
     margin: 10px auto 0 auto;
     display: block;
-    transition-delay: 0.5s;
+    transition-duration: 0.5s;
 }
 .niceButton button:hover {
     background-color: red;
