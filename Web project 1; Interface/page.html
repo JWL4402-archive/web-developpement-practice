@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <script src="script.js"></script>
+    </head>
+    <body id="doc">
+        <div id="header" style="height: 120px;">
+        <img style="float: left; height: 120px;" src="src/nasaLogo.png">
+        <h1 style="color: white; ;">Astronaut profiles</h1>
+        </div>
+        <div id="info1">
+            <h2>Astronauts</h2>
+            <p">
+            Here we will show some of the astronauts who ventured into space for mankind. <br>
+            Astronauts come from many different countries, and all risk their life in order to further the progress of science.
+            </p>
+        </div>
+        <div id="interface">
+            <div id="select" class="niceButton">
+                <button id="neilArmstrong" onclick='setText("neilArmstrong")'>Niel Armstrong</button>
+                <button id="buzzAldrin" onclick='setText("buzzAldrin")'>Buzz Aldrin</button>
+                <button id="yuriGagarin" onclick='setText("yuriGagarin")'>Yuri Gagarin</button>
+                <button id="chrisHadfield" onclick='setText("chrisHadfield")'>Chris Hadfield</button>
+                <button id="sallyRide" onclick='setText("sallyRide")'>Sally Ride</button>
+            </div>
+            <div id="display">
+                <h2 id="displayHead"></h2>
+                <p id="displayPara">Click on a button to display information about that astronaut.</p>
+                <img style="float: right; height: 180px; width: 120px; margin: 10px 20px;" id="displayImg">
+            </div>
+        </div>
+        <div id="footer">
+            <h3>Shitty web developpement LLC</h3>
+        </div>
+    </body>
+    
+</html>
