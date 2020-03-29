@@ -1,0 +1,25 @@
+#header {
+    background-color: crimson;
+    height: 120px;
+}
+#logo {
+    width: 100px;
+    height: 100px;
+    padding: 10px 30px 10px 10px;
+    float: left;
+}
+#header a {
+    float: left;
+    font-size: 36px;
+    color: white;
+    padding: 42px 40px 42px 0px;
+}
+#footer {
+    background-color: black;
+    height: 80px;
+}
+#footer .p {
+    color: white;
+    font-size: 12px;
+    margin: 8px 10px 0px 10px;
+}
