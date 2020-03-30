@@ -1,24 +1,46 @@
+/* HEADER BEGINS HERE */
 #header {
     background-color: crimson;
-    height: 120px;
+    height: 126px;
     margin: 0px;
+}
+#header ul {
+    list-style-type: none;
+    margin: 0px;
+}
+#header li {
+    float: left;
+}
+#header a {
+    display: block;
+    font-size: 36px;
+    color: white;
+    padding: 42px 20px 42px 20px;
+}
+#header .active {
+    background-color: #BF0000;
+
+}
+#header a:hover:not(.active) {
+    background-color: #ec143c;
+    transition-duration: 0.2s;
 }
 #logo {
     width: 100px;
     height: 100px;
-    padding: 10px 30px 10px 10px;
+    padding: 13px 30px 13px 20px;
     float: left;
 }
-#header a {
-    float: left;
-    font-size: 36px;
-    color: white;
-    padding: 42px 40px 42px 0px;
+#logo:hover{
+    transition-duration: 0.2s;
+    background-color: #ec143c;
 }
+
+/* INTRO BEGINS HERE */
 
 #intro {
     background-color: white;
-    /*height: 220px;*/
+    height: 200px;
     margin: 0px;
 }
 #intro h2 {
@@ -29,15 +51,89 @@
 }
 #intro p {
     font-size: 24px;
-    margin: 20px 24px 0px 24px;
+    margin: 20px 24px 16px 24px;
 }
-#intro .endText {
-    margin-bottom: 16px;
+
+/* NAV BEGINS HERE */
+
+.clear {
+    clear: both;
+} /* FOR AFTER FLOATS */
+
+#navBar {
+    width: 20%;
+    float: left;
+    overflow: auto;
+    border: 1px solid black;
+    background-color: lightblue;
+    box-sizing: border-box;
+    height: 378px;
 }
+#navBar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: sticky;
+    height: auto;
+    overflow: auto;
+}
+#navBar li a {
+    display: block;
+    /* background-color: lightblue; */
+    color: blue;
+    font-size: 24px;
+    padding: 8px;
+    text-align: center;
+}
+#navBar li a:hover {
+    background-color: blue;
+    color: white;
+}
+#navBar li a:not(.lastNav) {
+    border-bottom: 1px solid black;
+}
+
+.collapseContainer {
+    width: 80%;
+    margin: 0px;
+    border: 25px solid floralwhite;
+    background-color: lightgreen;
+    height: auto;
+    box-sizing: border-box;
+}
+#navMenu .collapseContainer {
+    float: left;
+}
+.collapsible {
+    background-color: forestgreen;
+    border: 2px solid forestgreen;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin: 12px 1%;
+    width: 98%;
+    font-size: 16px;
+    text-align: left;
+    transition-duration: 0.4s;
+}
+.active, .collapsible:hover {
+    background-color: #00a600;
+}
+.content {
+    display: none;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 12px 1%;
+    font-size: 16px;
+}
+
+/* FOOTER BEGINS HERE */
 
 #footer {
     background-color: black;
     height: 80px;
+    margin: 0px;
 }
 #footer .p {
     color: white;
