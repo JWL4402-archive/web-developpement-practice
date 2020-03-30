@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="collapsableText.js"></script>
+    </head>
+    <body style="margin: 0px;">
+        <div id="header"> 
+            <img src="src/logo.png" alt="Logo" id="logo">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="languages.html" class="active">Languages</a></li>
+                <!-- <li><a href="about.html">About</a></li> -->
+            </ul>
+        </div>
+        <div id="navMenu">
+            <div id="navBar">
+                <ul>
+                    <li><a href="#cont1">Java</a></li>
+                    <li><a href="#cont2">HTML</a></li>
+                    <li><a href="#cont3">CSS</a></li>
+                    <li><a href="#cont4">Javascript</a></li>
+                </ul>
+            </div>
+            <div id="navCollapse">
+                <div class="collapseContainer">
+                    <button onclick='collapse(this, "cont1", "navBar", "collapseContainer")' class="collapsible">Java</button>
+                    <div class="content" id="cont1">
+                        <p>
+                            I started learning Java at school for a Robotics club. Java was the first language I started learning. I've done some basic challenges that my club mentor<br>
+                            has assigned me, but I haven't done much on my own for the language.
+                        </p>
+                    </div>
+                    <button onclick='collapse(this, "cont2")' class="collapsible">HTML</button>
+                    <div class="content" id="cont2">
+                        <p>
+                            Even before learning Java, I knew a little bit about HTML. However, I was young and knew close to nothing about coding so I didn't learn very much. <br>
+                            I started to somewhat seriously learn HTML during the March break of 2020, because of the extra free time I had due to the Coronavirus outbreak. This <br>
+                            webpage is actually my second real attempt at putting my basic HTML knowledge into practice.
+                        </p>
+                    </div>
+                    <button onclick='collapse(this, "cont3")' class="collapsible">CSS</button>
+                    <div class="content" id="cont3">
+                        <p>
+                            I started learning CSS at the same time I started to learn HTML and Javascript, during March break 2020, because prior to the break my leader had assigned <br>
+                            me a challenge in Javascript, and after completing it I started to develop my knowledge of CSS, HTML, and Javascript.
+                        </p>
+                    </div>
+                    <button onclick='collapse(this, "cont4")' class="collapsible">Javascript</button>
+                    <div class="content" id="cont4">
+                        <p>
+                            I started learning Javascript when my robotics club mentor challenged me to complete a simple task in a language I've never used before, Javascript, prior <br>
+                            to the challenge, I hadn't really tried to learn a language apart from Java, so I accepted and got to work. In order to complete the challenge, I had to <br>
+                            learn some basic HTML and CSS too, which got me interested in those three languages. After that, I started my attempt to learn basic web developpment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="footer">
+            <p id="foot" class="p">Contact me at expertjosh2000@gmail.com</p>
+        </div>
+    </body>
+</html>
