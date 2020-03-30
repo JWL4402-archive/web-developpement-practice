@@ -2,7 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="style.css">
-        <script src="script.js"></script>
+        <script src="collapsableText.js"></script>
     </head>
     <body style="margin: 0px;">
         <div id="header"> 
@@ -13,8 +13,29 @@
                 <li><a href="about.html">About</a></li>
             </ul>
         </div>
+        <div id="navMenu">
+            <div id="navBar">
+                <ul>
+                    <li><a href="#cont1">Java</a></li>
+                    <li><a>HTML</a></li>
+                    <li><a>CSS</a></li>
+                    <li><a class="lastNav">Javascript</a></li>
+                </ul>
+            </div>
+            <div id="navCollapse">
+                <div class="collapseContainer">
+                    <button onclick='collapse(this, "cont1")' class="collapsible">Java</button>
+                    <div class="content" id="cont1">
+                        <p>hi</p>
+                    </div>
+                    <button onclick='collapse(this, "cont2")' type="button" class="collapsible">Java</button>
+                    <p class="content" id="cont2">Hello</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
         <div id="footer">
-            <p class="p">Contact me at expertjosh2000@gmail.com</p>
+            <p id="foot" class="p">Contact me at expertjosh2000@gmail.com</p>
         </div>
     </body>
 </html>

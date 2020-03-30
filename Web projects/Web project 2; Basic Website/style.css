@@ -1,17 +1,8 @@
+/* HEADER BEGINS HERE */
 #header {
     background-color: crimson;
     height: 126px;
     margin: 0px;
-}
-#logo {
-    width: 100px;
-    height: 100px;
-    padding: 13px 30px 13px 20px;
-    float: left;
-}
-#logo:hover{
-    transition-duration: 0.2s;
-    background-color: #ec143c;
 }
 #header ul {
     list-style-type: none;
@@ -34,6 +25,18 @@
     background-color: #ec143c;
     transition-duration: 0.2s;
 }
+#logo {
+    width: 100px;
+    height: 100px;
+    padding: 13px 30px 13px 20px;
+    float: left;
+}
+#logo:hover{
+    transition-duration: 0.2s;
+    background-color: #ec143c;
+}
+
+/* INTRO BEGINS HERE */
 
 #intro {
     background-color: white;
@@ -50,6 +53,81 @@
     font-size: 24px;
     margin: 20px 24px 16px 24px;
 }
+
+/* NAV BEGINS HERE */
+
+.clear {
+    clear: both;
+} /* FOR AFTER FLOATS */
+
+#navBar {
+    width: 20%;
+    float: left;
+    overflow: auto;
+    border: 1px solid black;
+    background-color: lightblue;
+    box-sizing: border-box;
+    /* height: 600px; */
+}
+#navBar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    position: sticky;
+    height: auto;
+    overflow: auto;
+}
+#navBar li a {
+    display: block;
+    /* background-color: lightblue; */
+    color: blue;
+    font-size: 24px;
+    padding: 8px;
+    text-align: center;
+}
+#navBar li a:hover {
+    background-color: blue;
+    color: white;
+}
+#navBar li a:not(.lastNav) {
+    border-bottom: 1px solid black;
+}
+
+.collapseContainer {
+    width: 80%;
+    margin: 0px;
+    border: 25px solid floralwhite;
+    background-color: lightgreen;
+    height: auto;
+    box-sizing: border-box;
+}
+#navMenu .collapseContainer {
+    float: left;
+}
+.collapsible {
+    background-color: forestgreen;
+    border: 2px solid forestgreen;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin: 12px 1%;
+    width: 98%;
+    font-size: 16px;
+    text-align: left;
+    transition-duration: 0.4s;
+}
+.active, .collapsible:hover {
+    background-color: #00a600;
+}
+.content {
+    display: none;
+    background-color: green;
+    color: white;
+    padding: 12px 18px;
+    margin: 12px 1%;
+}
+
+/* FOOTER BEGINS HERE */
 
 #footer {
     background-color: black;
