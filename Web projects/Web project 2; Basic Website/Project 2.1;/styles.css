@@ -1,0 +1,60 @@
+/* General styles */
+
+body {
+    margin: 0px;
+}
+
+/* Header styles start */
+
+.header {
+   width: 100%;
+   height: 130px;
+   overflow: auto;
+   background-color: #00DD00; /* This controls the header background color */
+} /* Styles the green bar */
+
+#logo {
+    width: 100px;
+    height: 100px;
+    /* ^ Controls the dimensions of the logo */
+    padding: 15px 30px 15px 30px;
+    margin: 0px;
+}
+
+.header ul {
+    list-style-type: none; /* Removes the bullet points from the <ul> */
+    margin: 0px;
+    padding: 0px;
+}
+
+.header li {
+    float: left; /* Pushes all of the <li> items to the left */
+}
+
+.header li:hover:not(.active) { /* Activates when a object is hovered over in the header */
+    transition-duration: 0.2s; /* Makes the color change over time, making it less abrupt */
+    background-color: #32cd32; /* Color it changes to upon hover */
+}
+
+.header .active {
+    background-color: #00AA00; /* Makes the selected tab a distint color, to show which tab is loaded */
+}
+
+.header a {
+    font-size: 36px;
+    padding: 44px 20px;
+    color: white;
+    display: block;
+}
+
+
+
+/* Header styles end */
+
+/* Footer styles start */
+
+.footer {
+
+}
+
+/* Footer styles end */
