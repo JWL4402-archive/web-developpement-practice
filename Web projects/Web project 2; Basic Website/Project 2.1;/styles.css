@@ -4,6 +4,14 @@ body {
     margin: 0px;
 }
 
+/* General styles end */
+
+
+
+/* Universal starts */
+
+
+
 /* Header styles start */
 
 .header {
@@ -11,6 +19,7 @@ body {
    height: 130px;
    overflow: hidden;
    background-color: #00DD00; /* This controls the header background color */
+   /* border-bottom: 1px solid #00aa00; */
 } /* Styles the green bar */
 
 #logo {
@@ -47,8 +56,6 @@ body {
     display: block;
 }
 
-
-
 /* Header styles end */
 
 
@@ -72,5 +79,80 @@ body {
     width: auto;
 }
 
-
 /* Footer styles end */
+
+
+
+/* Universal end */
+
+
+/* Home starts */
+
+
+
+/* Introduction styles start */
+
+.intro {
+    background-color: #EF5455;
+}
+
+.intro h1 {
+    text-align: center;
+    font-size: 36px;
+    padding: 12px 0px 16px 0px;
+    margin: 0px;
+    color: #2B3252;
+}
+
+.intro h2 {
+    text-align: center;
+    font-size: 30px;
+    padding: 8px 0px 16px 0px;
+    margin: 0px;
+    color: #2B3252;
+}
+
+.intro p {
+    font-size: 24px;
+    padding: 0px 36px 8px 36px;
+    margin: 0px;
+    color: #FAD744;
+}
+
+.intro .last {
+    padding-bottom: 12px;
+}
+
+/* Introduction styles end */
+
+
+
+/* Home ends */
+
+
+/* Languages start */
+
+
+
+/*   */
+
+
+
+/* Languages end */
+
+
+/* About starts */
+
+
+
+/*   */
+
+
+
+/* About ends */
+
+
+/* Color combination ideas :
+1;
+Background - Purple (#3C1A5B)
+Text - Yellow (#FFF748)
