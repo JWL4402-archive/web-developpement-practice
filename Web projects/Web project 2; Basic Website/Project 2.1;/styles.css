@@ -4,6 +4,10 @@ body {
     margin: 0px;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+} /* This removes the scrollbar, while still keeping the functionality of being able to scroll */
+
 /* General styles end */
 
 
@@ -134,8 +138,81 @@ body {
 
 
 
-/*   */
+/* Collapse styles starts */
 
+.collapse {
+    background-color: #C4DFE6;
+    height: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
+    margin: 0px;
+}
+
+.collapse .outline {
+    background-color: #66A5AD;
+    width: 90%;
+    margin: 0px 5%;
+    padding-bottom: 16px;
+}
+
+.collapse .accordian {
+    background-color: #07575B;
+    width: 90%; /* Button only fills 90% of the container, */
+    margin: 16px 5% 0px 5%; /* Button is centered because the rest of the container is margin (5% left, 5% right). 0px bottom margin lets the content sit directly under the button. */
+    padding: 8px 12px 8px 12px; /* Padding makes the button bigger and more attractive */
+    border: 2px solid #003B46;
+    text-align: left;
+    color: white;
+    font-size: 24px;
+    cursor: pointer; /* Makes the cursor a pointer to indicate it's clickable */
+} /* #003B46 */
+
+.collapse .accordian:focus { /* :focus is when a button is clicked */
+    outline: none; /* Removes the blue border that normally happens when a button is clicked */
+}
+
+/* .collapse .accordian .last {
+    margin-bottom: 16px;
+    padding-bottom: 8px;
+} */
+
+.collapse .accordian:hover {
+    background-color: #003B46;
+}
+
+.collapse .accordian::after {
+    content: "\002B";
+    color: white;
+    font-weight: bold;
+    float: right;
+    margin-left: 6px;
+}
+
+.collapse .active {
+    background-color: #003B46;
+}
+
+.collapse .active::after {
+    content: "\002D";
+}
+
+.collapse .panel {
+    background-color: #07575B;
+    width: 90%;
+    margin: 0px 5% 0px 5%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out; /* Makes it so that it expands over time to the full size of the content */
+    /* display: none; */
+}
+
+.collapse p {
+    color: white;
+    font-size: 18px;
+    margin: 16px 16px 12px 16px;
+}
+
+/* Collapse styles end */
 
 
 /* Languages end */
