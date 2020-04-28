@@ -1,0 +1,58 @@
+/* ! General styles */
+
+body {
+    margin: 0px;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+} /* This removes the scrollbar, while still keeping the functionality of being able to scroll */
+
+/* General styles ! */
+
+
+/* ! Header styles */
+
+.header {
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    background-color: #ffa500;
+} /* Styles the div container */
+
+.header .logo {
+    width: 100px;
+    height: 100px;
+    padding: 15px 30px;
+    margin: 0px;
+} /* Styles picture */
+
+.header ul {
+    list-style-type: none; /* Removes bullet points */
+    margin: 0px;
+    padding: 0px;
+}
+
+.header li {
+    float: left;
+} /* Makes the list items go from the left */
+
+.header li:hover:not(.active) { 
+    transition-duration: 0.2s;
+    background-color: #ff9500;
+} /* Activates when a element is hovered over, but is not active. */
+
+.header .active {
+    background-color: #Fd7014;
+} /* Makes the active (which tab is open) a darker, distinct color */
+
+.header a {
+    font-size: 36px;
+    padding: 46px 20px;
+    color: white;
+    display: block;
+} /* Styles the text for the links (redirects) */
+
+/* Header styles ! */
+
+
