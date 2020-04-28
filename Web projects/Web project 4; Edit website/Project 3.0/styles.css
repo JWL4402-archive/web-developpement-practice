@@ -56,3 +56,64 @@ body::-webkit-scrollbar {
 /* Header styles ! */
 
 
+/* Footer styles ! */
+
+/* Ideas:
+- Possible footer colors; darkest orange + white text (contrast?), black + white text (standard), white + black text, light green?
+- insta credit
+*/
+
+/* Explanation:
+Each <ul> element creates a new column.
+Each <li> element creates a new row in its parent column.
+
+To change the contents of footers, use Javascript.
+Letter = Column, Number = Row, ex B3 = Column 2, Row 3
+*/
+
+.footer {
+    width: 100%; /* Container extends to full size of the page */
+    overflow: auto; /* Makes the footer extend to cover contents */
+    background-color: #dd7014;
+} /* Styles div container */
+
+.footer ul {
+    list-style-type: none; /* Removes bullet points */
+    float: left; /* Aligns the footers horizontally starting from the left */
+    margin: 12px 18px; /* Seperates columns */
+    padding: 1px;
+    /* background-color: blue; */
+}
+
+.footer li {
+    margin: 0px;
+    padding: 0px;
+    /* background-color: white; */
+}
+.footer a {
+    font-size: 14px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer p {
+    font-size: 14px;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+.footer li:not(.title) { 
+    margin-top: 2px; /* Makes it so the non-title elements aren't glued together */
+} /* Activates for every element but the top (title) element. */
+
+.footer .title {
+    margin-bottom: 10px;
+} /* Use .title for the title of a list, to seperate from other items. */
+
+.footer .title p, .footer .title a {
+    font-size: 18px;
+}
+
+/* ! Footer styles */
