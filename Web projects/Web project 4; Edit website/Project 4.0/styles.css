@@ -131,6 +131,28 @@ body::-webkit-scrollbar {
 /* Display styles ! */
 
 
+/* ! About styles */
+
+.about {
+    background-color: #00ff00;
+    width: 100%;
+}
+
+.about h1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.about p {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* About styles ! */
+
+
 /* Footer styles ! */
 
 /* Ideas:
