@@ -80,6 +80,41 @@ body::-webkit-scrollbar {
 /* ! Index styles */
 
 
+/* ! Display styles */
+
+.display {
+    background-color: #00ff00;
+    width: 100%;
+    overflow: auto; /* Makes the container wrap the elements (background color on elements) */
+}
+
+.display .video {
+    float: left;
+    width: 50%;
+}
+
+.display h1 {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+}
+
+.display .video h2 {
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+
+.display .video video {
+    width: 80%;
+    outline: none; /* Removes the on-click border */
+    padding: 0px 10% 5% 10%;
+    margin: 0px;
+}
+
+/* Display styles ! */
+
+
 /* Footer styles ! */
 
 /* Ideas:
