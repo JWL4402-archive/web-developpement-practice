@@ -1,0 +1,163 @@
+* {
+    box-sizing: border-box;
+} /* This makes sure all elements include padding and border in the total width and height of the elements. */
+
+body {
+    margin: 0px;
+}
+
+/* For mobile phones */
+
+@media only screen and (max-width: 600px) {
+    [class*="col-"] {
+        width: 100%;
+        float: left;
+        padding: 15px;
+    }
+    /* .col-xs-1 {width: 8.33%;}
+    .col-xs-2 {width: 16.66%;}
+    .col-xs-3 {width: 25%;}
+    .col-xs-4 {width: 33.33%;}
+    .col-xs-5 {width: 41.66%;}
+    .col-xs-6 {width: 50%;}
+    .col-xs-7 {width: 58.33%;}
+    .col-xs-8 {width: 66.66%;}
+    .col-xs-9 {width: 75%;}
+    .col-xs-10 {width: 83.33%;}
+    .col-xs-11 {width: 91.66%;}
+    .col-xs-12 {width: 100%;} */
+} /* Extra small devices: 600px and under (phones, etc) */ 
+
+@media only screen and (min-width: 600px) {
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+} /* Small devices: 600px and up (portrait tablets, large phones, etc) */
+
+@media only screen and (min-width: 768px) { /* For desktops*/
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+} /* Medium devices: 768px and up (landscape tablets, etc) */
+
+@media only screen and (min-width: 992px) {
+    .col-l-1 {width: 8.33%;}
+    .col-l-2 {width: 16.66%;}
+    .col-l-3 {width: 25%;}
+    .col-l-4 {width: 33.33%;}
+    .col-l-5 {width: 41.66%;}
+    .col-l-6 {width: 50%;}
+    .col-l-7 {width: 58.33%;}
+    .col-l-8 {width: 66.66%;}
+    .col-l-9 {width: 75%;}
+    .col-l-10 {width: 83.33%;}
+    .col-l-11 {width: 91.66%;}
+    .col-l-12 {width: 100%;}
+} /* Large devices: 992px and up (laptops/desktops, etc) */
+
+@media only screen and (min-width: 1200px) {
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+} /* Extra large devices: 1200px and up (large laptops/desktops, etc) */
+
+.row::after {
+    content: ""; /* Not sure what this does */
+    clear: both; /* Clears floats; makes it so it can continue vertically */
+    display: table; /* Not quite sure */
+}
+
+/* ! Header styles */
+
+.header {
+    background-color: orange;
+}
+
+.header ul {
+    list-style-type: none; /* Removes bullet points from the nav bar */
+    margin: 0px;
+    padding: 0px;
+    /* Makes it so that the div extends to the edge of the screen */
+}
+
+.header li {
+    text-align: center; /* Makes all the text center */
+    float: left; /* Makes them all line up horizontally instead of vertically */
+    padding: 12px 24px; /* Makes it so that there is space between the edge and the text */
+    border: 1px solid white;
+}
+
+.header a {
+    color: white; /* Makes the white text white (more readable) */
+    text-decoration: none; /* Removes the underline from the links */
+    font-size: 24px; /* Makes the text bigger and more readable */
+    padding: 12px 8px; /* Makes the clickable area bigger, so it's easier to click */
+}
+
+/* ! Introduction styles */
+
+.intro {
+    background-color: red;
+    height: 600px;
+}
+
+.intro > div {
+    float: left;
+    border: 15px solid white;
+}
+
+.intro .information {
+    background-color: blue;
+    height: 600px;
+    padding-left: 10px;
+}
+
+.intro .referenceBar {
+    background-color: green;
+    height: 600px;
+    padding-right: 10px;
+}
+
+.intro .referenceBar ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+.intro .referenceBar li {
+    text-align: center;
+    padding: 12px 8px;
+}
+
+.intro .referenceBar a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
